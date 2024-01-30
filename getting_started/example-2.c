@@ -35,7 +35,7 @@ static void activate (GtkApplication *app, gpointer user_data){
   // * just 1 cell horizontally and vertically (ie no spanning)
   // */
   //gtk_grid_attach (GTK_GRID (grid), button, 0, 0, 1, 1);
-  gtk_grid_attach (GTK_GRID (grid), button_print("Button A", "Helo World\n"), 0, 0, 1, 1);
+  gtk_grid_attach (GTK_GRID (grid), button_print("Hello!", "Helo World\n\0"), 0, 0, 1, 1);
 
 
   //button = gtk_button_new_with_label ("Button 2");
@@ -44,7 +44,7 @@ static void activate (GtkApplication *app, gpointer user_data){
   // * just 1 cell horizontally and vertically (ie no spanning)
   // */
   //gtk_grid_attach (GTK_GRID (grid), button, 1, 0, 1, 1);
-  gtk_grid_attach (GTK_GRID (grid), button_print("Button B", "Goby World\n"), 1, 0, 1, 1);
+  gtk_grid_attach (GTK_GRID (grid), button_print("Goby!!", "Goby World\n\0"), 1, 0, 1, 1);
 
 
   button = gtk_button_new_with_label ("Quit");
